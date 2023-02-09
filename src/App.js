@@ -14,25 +14,34 @@ const Item = styled(Paper)(({theme}) => ({
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header"></header>
-            <body className="App-body">
-            <Box sx={
-                    {flexGrow: 1}
-                }>
-                    <Grid container
-                        spacing={2}>
-                        <Grid>
-                            <Item>Teste A</Item>
+        <div className="app">
+            <header className="app-header"></header>
+            <body className="app-body">
+                <Box>
+                    <Grid className="main-grid" container>
+                        <Grid className="column-grid">
+                            <Item className="post-it">Teste A1</Item>
+                            <Item className="post-it">Teste A2</Item>
+                            <Item className="post-it">Teste A3</Item>
+                            <Item className="post-it">Teste A4</Item>
                         </Grid>
-                        <Grid>
-                            <Item>Teste B</Item>
+                        <Grid className="column-grid">
+                            <Item className="post-it">Teste B1</Item>
+                            <Item className="post-it">Teste B2</Item>
+                            <Item className="post-it">Teste B3</Item>
+                            <Item className="post-it">Teste B4</Item>
                         </Grid>
-                        <Grid>
-                            <Item>Teste C</Item>
+                        <Grid className="column-grid">
+                            <Item className="post-it">Teste C1</Item>
+                            <Item className="post-it">Teste C2</Item>
+                            <Item className="post-it">Teste C3</Item>
+                            <Item className="post-it">Teste C4</Item>
                         </Grid>
-                        <Grid>
-                            <Item>Teste D</Item>
+                        <Grid className="column-grid">
+                            <Item className="post-it">Teste D1</Item>
+                            <Item className="post-it">Teste D2</Item>
+                            <Item className="post-it">Teste D3</Item>
+                            <Item className="post-it">Teste D4</Item>
                         </Grid>
                     </Grid>
                 </Box>
