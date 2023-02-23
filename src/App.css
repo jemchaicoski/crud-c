@@ -7,7 +7,7 @@ html, body, #app, #app>div {
 }
 
 .app-header {
-  background-color: rgb(25,32,43);
+  background-color: rgb(32, 41, 54);
   min-height: 10vh;
   display: flex;
   flex-direction: column;

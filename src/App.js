@@ -1,8 +1,9 @@
 import './App.css';
 import React from 'react';
-import {Grid, Box} from "@mui/material";
+import {Box} from "@mui/material";
 import {styled} from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
+import Postit from './Components/Postit';
 
 const Item = styled(Paper)(({theme}) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -20,6 +21,7 @@ function App() {
                 <Box>
                     <Grid className="main-grid" container>
                         <Grid className="column-grid">
+                            {Postit}
                             <Item className="post-it">Teste A1</Item>
                             <Item className="post-it">Teste A2</Item>
                             <Item className="post-it">Teste A3</Item>
